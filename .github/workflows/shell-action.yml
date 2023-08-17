@@ -4,6 +4,8 @@ jobs:
   first-job:
     runs-on: ubuntu-22.04
     steps:
+      - name: check files
+        run: ls
       - name: Check scripts
         run: |
           echo "checking scripts:"
