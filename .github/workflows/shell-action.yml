@@ -1,0 +1,10 @@
+name: Shell Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check scripts
+        run: |
+          echo "checking scripts:"
+          shellcheck scripts/*.sh
