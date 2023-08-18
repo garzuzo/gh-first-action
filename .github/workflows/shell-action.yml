@@ -1,5 +1,9 @@
 name: Shell Workflow
-on: push
+on:
+  push:
+    branches:
+      - 'ci/**'
+  
 jobs:
   test:
     runs-on: ubuntu-22.04
